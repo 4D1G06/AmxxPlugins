@@ -23,7 +23,7 @@ public plugin_init()
 		fgets(fConfig, szLine, charsmax(szLine));
 		trim(szLine);
 
-		if (szLine[0] == ';' || (szLine[0] == '/' && szLine[1] == '/'))
+		if (szLine[0] == EOS || szLine[0] == ';' || (szLine[0] == '/' && szLine[1] == '/'))
 			continue;
 		
 		register_clcmd(szLine, "onChat");
