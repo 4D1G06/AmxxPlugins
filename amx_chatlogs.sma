@@ -34,7 +34,7 @@ public plugin_init()
 }
 
 public onChat(id)
-{
+{https://github.com/4D1G06/AmxxPlugins/blob/master/amx_chatlogs.sma
 	if (!get_pcvar_bool(g_pEnabled))
 		return;
 
