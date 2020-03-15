@@ -39,7 +39,7 @@ public plugin_init()
 
 public onChat(id)
 {
-    if (!get_pcvar_int(g_pEnabled))
+    if (!get_pcvar_num(g_pEnabled))
         return;
 
     new szCommand[16], szMessage[32], szName[32];
